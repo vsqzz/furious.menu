@@ -8,85 +8,86 @@ local RayfieldLibrary = {
 	Flags = {},
 	Theme = {
 		Default = {
-			TextFont = "SourceSans", -- Clear and modern font
+			TextFont = "Gotham", -- Modern and clear font
 			TextColor = Color3.fromRGB(255, 255, 255),
 
-			Background = Color3.fromRGB(30, 30, 30),
-			Topbar = Color3.fromRGB(40, 40, 40),
-			Shadow = Color3.fromRGB(20, 20, 20),
+			Background = Color3.fromRGB(18, 18, 18),
+			Topbar = Color3.fromRGB(28, 28, 28),
+			Shadow = Color3.fromRGB(0, 0, 0, 0.5), -- Slightly transparent shadow for depth
 
-			NotificationBackground = Color3.fromRGB(40, 40, 40),
-			NotificationActionsBackground = Color3.fromRGB(255, 255, 255),
+			NotificationBackground = Color3.fromRGB(30, 30, 30),
+			NotificationActionsBackground = Color3.fromRGB(50, 50, 50),
 
-			TabBackground = Color3.fromRGB(50, 50, 50),
-			TabStroke = Color3.fromRGB(70, 70, 70),
-			TabBackgroundSelected = Color3.fromRGB(80, 80, 80),
+			TabBackground = Color3.fromRGB(38, 38, 38),
+			TabStroke = Color3.fromRGB(60, 60, 60),
+			TabBackgroundSelected = Color3.fromRGB(88, 88, 88),
 			TabTextColor = Color3.fromRGB(200, 200, 200),
 			SelectedTabTextColor = Color3.fromRGB(255, 255, 255),
 
-			ElementBackground = Color3.fromRGB(45, 45, 45),
-			ElementBackgroundHover = Color3.fromRGB(55, 55, 55),
-			SecondaryElementBackground = Color3.fromRGB(35, 35, 35),
-			ElementStroke = Color3.fromRGB(60, 60, 60),
-			SecondaryElementStroke = Color3.fromRGB(50, 50, 50),
+			ElementBackground = Color3.fromRGB(48, 48, 48),
+			ElementBackgroundHover = Color3.fromRGB(58, 58, 58),
+			SecondaryElementBackground = Color3.fromRGB(38, 38, 38),
+			ElementStroke = Color3.fromRGB(78, 78, 78),
+			SecondaryElementStroke = Color3.fromRGB(68, 68, 68),
 
-			SliderBackground = Color3.fromRGB(100, 149, 237), -- CornflowerBlue
-			SliderProgress = Color3.fromRGB(65, 105, 225), -- RoyalBlue
-			SliderStroke = Color3.fromRGB(70, 130, 180), -- SteelBlue
+			SliderBackground = Color3.fromRGB(70, 130, 180), -- SteelBlue
+			SliderProgress = Color3.fromRGB(100, 149, 237), -- CornflowerBlue
+			SliderStroke = Color3.fromRGB(72, 61, 139), -- DarkSlateBlue
 
-			ToggleBackground = Color3.fromRGB(45, 45, 45),
-			ToggleEnabled = Color3.fromRGB(0, 150, 136), -- Teal
-			ToggleDisabled = Color3.fromRGB(100, 100, 100),
-			ToggleEnabledStroke = Color3.fromRGB(0, 172, 155),
-			ToggleDisabledStroke = Color3.fromRGB(125, 125, 125),
-			ToggleEnabledOuterStroke = Color3.fromRGB(100, 100, 100),
-			ToggleDisabledOuterStroke = Color3.fromRGB(65, 65, 65),
+			ToggleBackground = Color3.fromRGB(48, 48, 48),
+			ToggleEnabled = Color3.fromRGB(46, 204, 113), -- Emerald
+			ToggleDisabled = Color3.fromRGB(231, 76, 60), -- Alizarin
+			ToggleEnabledStroke = Color3.fromRGB(39, 174, 96), -- Nephritis
+			ToggleDisabledStroke = Color3.fromRGB(192, 57, 43), -- Pomegranate
+			ToggleEnabledOuterStroke = Color3.fromRGB(39, 174, 96),
+			ToggleDisabledOuterStroke = Color3.fromRGB(192, 57, 43),
 
-			InputBackground = Color3.fromRGB(45, 45, 45),
-			InputStroke = Color3.fromRGB(70, 70, 70),
-			PlaceholderColor = Color3.fromRGB(200, 200, 200)
+			InputBackground = Color3.fromRGB(48, 48, 48),
+			InputStroke = Color3.fromRGB(78, 78, 78),
+			PlaceholderColor = Color3.fromRGB(150, 150, 150)
 		},
 		Light = {
-			TextFont = "Gotham", 
-			TextColor = Color3.fromRGB(50, 50, 50),
+			TextFont = "Gotham",
+			TextColor = Color3.fromRGB(33, 33, 33),
 
 			Background = Color3.fromRGB(245, 245, 245),
-			Topbar = Color3.fromRGB(235, 235, 235),
-			Shadow = Color3.fromRGB(200, 200, 200),
+			Topbar = Color3.fromRGB(225, 225, 225),
+			Shadow = Color3.fromRGB(0, 0, 0, 0.1), -- Slightly transparent shadow for depth
 
 			NotificationBackground = Color3.fromRGB(240, 240, 240),
-			NotificationActionsBackground = Color3.fromRGB(255, 255, 255),
+			NotificationActionsBackground = Color3.fromRGB(230, 230, 230),
 
 			TabBackground = Color3.fromRGB(220, 220, 220),
 			TabStroke = Color3.fromRGB(200, 200, 200),
-			TabBackgroundSelected = Color3.fromRGB(240, 240, 240),
+			TabBackgroundSelected = Color3.fromRGB(180, 180, 180),
 			TabTextColor = Color3.fromRGB(80, 80, 80),
-			SelectedTabTextColor = Color3.fromRGB(30, 30, 30),
+			SelectedTabTextColor = Color3.fromRGB(33, 33, 33),
 
-			ElementBackground = Color3.fromRGB(235, 235, 235),
+			ElementBackground = Color3.fromRGB(255, 255, 255),
 			ElementBackgroundHover = Color3.fromRGB(245, 245, 245),
-			SecondaryElementBackground = Color3.fromRGB(225, 225, 225),
+			SecondaryElementBackground = Color3.fromRGB(235, 235, 235),
 			ElementStroke = Color3.fromRGB(210, 210, 210),
 			SecondaryElementStroke = Color3.fromRGB(190, 190, 190),
 
-			SliderBackground = Color3.fromRGB(100, 149, 237),
-			SliderProgress = Color3.fromRGB(65, 105, 225),
-			SliderStroke = Color3.fromRGB(70, 130, 180),
+			SliderBackground = Color3.fromRGB(26, 188, 156), -- Turquoise
+			SliderProgress = Color3.fromRGB(22, 160, 133), -- GreenSea
+			SliderStroke = Color3.fromRGB(17, 122, 101), -- Darker shade of GreenSea
 
 			ToggleBackground = Color3.fromRGB(200, 200, 200),
-			ToggleEnabled = Color3.fromRGB(0, 150, 136),
-			ToggleDisabled = Color3.fromRGB(200, 200, 200),
-			ToggleEnabledStroke = Color3.fromRGB(0, 172, 155),
-			ToggleDisabledStroke = Color3.fromRGB(150, 150, 150),
-			ToggleEnabledOuterStroke = Color3.fromRGB(100, 100, 100),
-			ToggleDisabledOuterStroke = Color3.fromRGB(170, 170, 170),
+			ToggleEnabled = Color3.fromRGB(46, 204, 113), -- Emerald
+			ToggleDisabled = Color3.fromRGB(231, 76, 60), -- Alizarin
+			ToggleEnabledStroke = Color3.fromRGB(39, 174, 96), -- Nephritis
+			ToggleDisabledStroke = Color3.fromRGB(192, 57, 43), -- Pomegranate
+			ToggleEnabledOuterStroke = Color3.fromRGB(39, 174, 96),
+			ToggleDisabledOuterStroke = Color3.fromRGB(192, 57, 43),
 
-			InputBackground = Color3.fromRGB(230, 230, 230),
+			InputBackground = Color3.fromRGB(255, 255, 255),
 			InputStroke = Color3.fromRGB(210, 210, 210),
 			PlaceholderColor = Color3.fromRGB(150, 150, 150)
 		}
 	}
 }
+
 
 
 
